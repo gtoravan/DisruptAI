@@ -2,7 +2,7 @@
 
 DisruptAI is revolutionizing advertising with our next-generation platform tailored for ad campaign managers, influencers, and dropshippers. Our specialty lies in crafting hyper-targeted advertisements using cutting-edge Generative AI technology.
 
-#### URL - _________________
+#### URL - https://dev.d3n6se89h1gpq0.amplifyapp.com/
 
 ### Key Features:
 
