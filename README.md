@@ -20,6 +20,7 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
 
 - [X] Create git repo
 - [ ] Establish a connection to Midjourney programmatically, as they don't provide APIs. Explore alternative methods for integrating with Midjourney's platform to access their data securely.
+- Setup unofficial using this github repository George-iam/Midjourney_api
 - [ ] Make connection to OpenAI 
     - Leverage ChatGPT to craft prompts to feed into midjourney based on user input
 - [ ] Create a spring API in Intellij
@@ -42,3 +43,6 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
 - [ ] Explore options for running automated campaigns. Research automation tools and algorithms that can optimize ad campaigns based on performance data.
 
 *Work in Progress*
+
+
+### Currently in Research Stage. This is for profit. If I make a company, I will offer employment to open source contributors. MIT License is the only one. For personal use, you can use this. Ideally once this is on AWS, I will change the usage.
