@@ -31,7 +31,8 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
   - Configure a workflow
   - Design basic database
   - Retrieve user pictures for generating ad responses from DynamoDB
-  - Call openAI and Midjourney
+  - [X] Call openAI
+  - [ ] Call Midjourney
   - Return image response to user
 - [ ] Develop a sample UI
     - Incorporate Midjourney UI elements

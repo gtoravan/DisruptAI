@@ -72,6 +72,8 @@ public class OpenAIService {
         String apiKey = "OPENAIKEY";
         String model = "gpt-3.5-turbo";
 
+        String systemPrompt = "You are advertisement agency worker. Craft a prompt for midjourney based given prompt. The prompt will be a user demographic and information about the product. The prompt/response you craft will be fed into an image generation model to generate a picture that will be used to advertise to target democratic.";
+
         try {
             URL obj = new URL(url);
             HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
@@ -80,7 +82,14 @@ public class OpenAIService {
             connection.setRequestProperty("Content-Type", "application/json");
 
             // The request body
-            String body = "{\"model\": \"" + model + "\", \"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]}";
+            String body = "{\"model\": \"" + model +
+                    "\", \"messages\": " +
+                    "[" +
+                    "{\"role\": \"system\", \"content\": \"You are advertisement agency worker. Craft a prompt for midjourney based given prompt. The prompt will be a user demographic and information about the product. The prompt/response you craft will be fed into an image generation model to generate a picture that will be used to advertise to target democratic.\"}," +
+                    "{\"role\": \"user\", \"content\": \"" + prompt + "\"}" +
+                    "]" +
+                    "}";
+
             connection.setDoOutput(true);
             OutputStreamWriter writer = new OutputStreamWriter(connection.getOutputStream());
             writer.write(body);
