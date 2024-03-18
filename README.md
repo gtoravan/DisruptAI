@@ -19,14 +19,15 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
 ### Plan of Action:
 
 - [X] Create git repo
-- [ ] Establish a connection to Midjourney programmatically, as they don't provide APIs. Explore alternative methods for integrating with Midjourney's platform to access their data securely.
+- [X] Establish a connection to Midjourney programmatically, as they don't provide APIs. Explore alternative methods for integrating with Midjourney's platform to access their data securely.
+  - Able to listen to midjourney, send prompts and download images.
 - Setup unofficial using this github repository George-iam/Midjourney_api
 - [ ] Make connection to OpenAI 
     - Leverage ChatGPT to craft prompts to feed into midjourney based on user input
-- [ ] Create a spring API in Intellij
-  - Create a REST API
-  - Have it listened to a port
-  - Receive a POST call
+- [X] Create a spring API in Intellij
+  - [X] Create a REST API
+  - [X] Have it listened to a port
+  - [X] Receive a POST call
   - Configure a workflow
   - Design basic database
   - Retrieve user pictures for generating ad responses from DynamoDB
