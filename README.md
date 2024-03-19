@@ -4,6 +4,8 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
 
 #### URL - https://dev.d3n6se89h1gpq0.amplifyapp.com/
 
+#### Special Thanks to https://github.com/George-iam
+
 ### Key Features:
 
 - **Targeted Advertisement Generation:** Create advertisements tailored to your target demographic and purchase impressions seamlessly. Our AI algorithms analyze user behavior and preferences to ensure your ads reach the right audience.
@@ -22,18 +24,18 @@ DisruptAI is revolutionizing advertising with our next-generation platform tailo
 - [X] Establish a connection to Midjourney programmatically, as they don't provide APIs. Explore alternative methods for integrating with Midjourney's platform to access their data securely.
   - Able to listen to midjourney, send prompts and download images.
 - Setup unofficial using this github repository George-iam/Midjourney_api
-- [ ] Make connection to OpenAI 
-    - Leverage ChatGPT to craft prompts to feed into midjourney based on user input
+- [X] Make connection to OpenAI 
+    - [X] Leverage ChatGPT to craft prompts to feed into midjourney based on user input
 - [X] Create a spring API in Intellij
   - [X] Create a REST API
   - [X] Have it listened to a port
   - [X] Receive a POST call
-  - Configure a workflow
+  - [X] Configure a workflow
   - Design basic database
   - Retrieve user pictures for generating ad responses from DynamoDB
   - [X] Call openAI
-  - [ ] Call Midjourney
-  - Return image response to user
+  - [X] Call Midjourney
+  - [X] Return image response to user
 - [ ] Develop a sample UI
     - Incorporate Midjourney UI elements
     - Enable users to submit sample pictures, stored in a DynamoDB

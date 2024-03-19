@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import main.java.com.example.demo_api.service.OpenAIService;
 
+import java.io.IOException;
+
 @Controller
 public class PromptController {
 
@@ -17,13 +19,13 @@ public class PromptController {
     }
 
     @PostMapping("/prompt")
-    public ResponseEntity<String> handlePrompt(@RequestBody PromptRequest request) {
+    public ResponseEntity<byte[]> handlePrompt(@RequestBody PromptRequest request) throws InterruptedException, IOException {
         String prompt = request.getPrompt();
         String imageBase64 = request.getImageBase64();
 
-        String openAIresponse = openAiService.callOpenAI(prompt,imageBase64);
+        ResponseEntity<byte[]> openAIresponse = openAiService.callOpenAI(prompt,imageBase64);
 
         // Process the prompt and image here
-        return ResponseEntity.ok(openAIresponse);
+        return openAIresponse;
     }
 }
